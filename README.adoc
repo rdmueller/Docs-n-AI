@@ -3,16 +3,25 @@ Docs-as-Code with AI
 
 === Install AI Tools in Github Codespaces
 
-```
-bash curl -fsSL https://claude.ai/install.sh | bash
+```bash
 
-sudo apt update sudo apt install -y nodejs npm
+sudo apt update 
+sudo apt install -y nodejs npm
 
-npx responsible-vibe-mcp --generate-config amazonq-cli # or claude, gemini, opencode 
+curl -fsSL https://claude.ai/install.sh | bash
+
+npx responsible-vibe-mcp --generate-config claude # amazonq-cli or gemini, opencode 
 ```
 
 now you can run code with all permissions:
 
 ```
 bash claude --dangerously-skip-permissions --resume 
+```
+
+=== Asciidoctor Syntax Reference
+
+```plain
+erstelle ein demo.adoc mit den wichtigsten AsciiDoc Formatierungen, wie Überschriften, Listen, Tabellen, Admonitions
+  etc. Nur die wichtigsten
 ```
