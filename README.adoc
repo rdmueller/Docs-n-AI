@@ -3,25 +3,47 @@ Docs-as-Code with AI
 
 === Install AI Tools in Github Codespaces
 
+.Dependencies
 ```bash
-
 sudo apt update 
 sudo apt install -y nodejs npm
+```
 
+.Claude Code
+```bash
 curl -fsSL https://claude.ai/install.sh | bash
 
 npx responsible-vibe-mcp --generate-config claude # amazonq-cli or gemini, opencode 
 ```
 
+.Amazon Q Developer CLI
+```bash
+wget https://desktop-release.q.us-east-1.amazonaws.com/latest/amazon-q.deb
+sudo dpkg -i amazon-q.deb
+sudo apt-get install -f
+
+q login --use-device-flow
+
+npx responsible-vibe-mcp --generate-config amazonq-cli # claude or gemini, opencode 
+```
+
 now you can run code with all permissions:
 
-```
-bash claude --dangerously-skip-permissions --resume 
+```bash
+claude --dangerously-skip-permissions --resume 
 ```
 
 === Asciidoctor Syntax Reference
 
 ```plain
-erstelle ein demo.adoc mit den wichtigsten AsciiDoc Formatierungen, wie Überschriften, Listen, Tabellen, Admonitions
+erstelle ein demo.adoc mit den wichtigsten AsciiDoc Formatierungen, wie 
+Überschriften, Listen, Tabellen, Admonitions
   etc. Nur die wichtigsten
+```
+
+=== Kontext-Diagramm
+
+```plain
+erstelle ein Plant-UML Kontext-Diagramm für ein e-Commerce System mit den wichtigsten 
+Akteuren und Systemen. Denke Dir was aus.
 ```
