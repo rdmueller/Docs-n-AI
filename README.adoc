@@ -2,16 +2,17 @@
 Docs-as-Code with AI
 
 === Install AI Tools in Github Codespaces
-'''
+
+```
 bash curl -fsSL https://claude.ai/install.sh | bash
 
 sudo apt update sudo apt install -y nodejs npm
 
 npx responsible-vibe-mcp --generate-config amazonq-cli # or claude, gemini, opencode 
-'''
+```
 
 now you can run code with all permissions:
 
-'''
+```
 bash claude --dangerously-skip-permissions --resume 
-'''
+```
